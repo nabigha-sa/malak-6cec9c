@@ -417,7 +417,7 @@
   .rings6 i b{ position:relative; font-family:'Baloo Bhaijaan 2',sans-serif; font-weight:800; font-size:clamp(15px,1.5vw,24px); color:var(--teal-d); }
   .rings6 i.low b{ color:#C2472C; }
   .rings6 span{ font-size:clamp(11px,1.02vw,15.5px); font-weight:700; color:var(--ink); line-height:1.45; }
-  .rings6 .src{ background:var(--teal-d); border-color:var(--teal-d); justify-content:center; }
+  .rings6 .src{ grid-column:span 2; background:var(--teal-d); border-color:var(--teal-d); justify-content:center; }
   .rings6 .src b{ font-family:'Baloo Bhaijaan 2',sans-serif; font-size:clamp(30px,3.2vw,50px); color:var(--sun); line-height:1; }
   .rings6 .src b small{ display:block; font-size:.4em; color:#cfeee9; }
   .rings6 .src span{ color:#fff; }
@@ -486,7 +486,7 @@
 </section>
 
 <!-- 3 الفكرة والفرصة -->
-<section class="slide" data-notes="ذكّرهم بالبرنامج في دقيقة: يوم كامل داخل المدرسة، دراسة نظامية بمنهج كامبردج، وقرآن وعلم ومهارات. ثم الأرقام الثلاثة: التكلفة الفعلية، والرسوم بعد الدعم، والإيراد المتوقع. لا تدخل في تفاصيل الموازنة الآن؛ إن سألوا فالجواب في الملحق أو بعد العرض.">
+<section class="slide" data-notes="ذكّرهم بالبرنامج في دقيقة: يوم كامل داخل المدرسة، دراسة نظامية بمنهج كامبردج، وقرآن وعلم ومهارات. ثم أشر إلى الأرقام الأربعة في البطاقة: الصفوف، وطول اليوم، والمسارات، والمقاعد.">
   <span class="eyebrow">تذكير سريع</span>
   <h2>نابغة في دقيقة</h2>
   <div class="two" style="margin-top:2.6vh;align-items:start">
@@ -499,11 +499,13 @@
         <li>الانطلاق <span data-k="start" class="fill">〔〕</span></li>
       </ul>
     </div>
-    <div class="pricehero" style="margin-top:0;flex-direction:column;align-items:stretch;gap:1.4vh">
-      <div><small>التكلفة الفعلية للطالب</small><div class="was"><span data-k="real_fmt">30,000</span> <small style="display:inline">ريال</small></div></div>
-      <div><small>الرسوم على الأسرة (شاملة رسوم المدرسة)</small><div class="now"><span data-k="fee_fmt">15,000</span> <em>ريال في السنة</em></div></div>
-      <div><small>الإيراد المتوقع من الرسوم في السنة</small><div class="now" style="font-size:clamp(28px,3.4vw,52px);color:var(--coral)"><span data-k="revenue">〔〕</span> <em>ريال</em></div></div>
-      <span class="tag" style="margin:0;align-self:flex-start">السداد دفعة واحدة أو تقسيطًا</span>
+    <div class="side" style="padding:3vh 2vw">
+      <div class="stats" style="gap:1.4vw">
+        <div style="padding:2.4vh 1vw"><b>1–6</b><span>الصفوف</span></div>
+        <div style="padding:2.4vh 1vw"><b>12</b><span>ساعة في اليوم</span></div>
+        <div style="padding:2.4vh 1vw"><b>5</b><span>مسارات بمستهدفات تُقاس</span></div>
+        <div style="padding:2.4vh 1vw"><b data-k="seats">20–30</b><span>مقعدًا بالترشيح</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -519,7 +521,7 @@
     <div class="seg" style="--c:#1B9A8F;flex:1"><i>🎥</i><b>المقابلة</b><span>عن بُعد، بأسئلة صفّه</span></div>
     <div class="seg" style="--c:#F6C453;flex:1"><i>🏅</i><b>الترتيب</b><span>درجة الفرز + درجة المقابلة</span></div>
     <div class="seg" style="--c:#EE6A4D;flex:1"><i>🤝</i><b>لقاء الأهالي</b><span>العرض التعريفي والأسئلة</span></div>
-    <div class="seg" style="--c:#0F5E58;flex:1"><i>✅</i><b>التسجيل</b><span>الرسوم والسياسات والبدء</span></div>
+    <div class="seg" style="--c:#0F5E58;flex:1"><i>✅</i><b>التسجيل</b><span>السياسات والبدء</span></div>
   </div>
   <div class="comfort" style="margin-top:3vh"><b>مبادئ:</b><span>كل خطوة لها أداة ومعيار مكتوب</span><span>ولي الأمر لا يرى نتيجة الفرز</span><span>كل إجابة محفوظة في جدول واحد</span><span>التواصل كله عبر واتساب المدرسة</span></div>
 </section>
@@ -591,7 +593,7 @@
   <span class="eyebrow">منصة نابغة</span>
   <h2>البرنامج كله في منصة واحدة، لكلٍّ شاشته</h2>
   <div class="team">
-    <div><i>🏛️</i><b>الإدارة</b><span>لوحة «اليوم» بما يحتاج قرارًا، والمؤشرات، والرسوم، والقبول، والصلاحيات، والنسخ الاحتياطي.</span></div>
+    <div><i>🏛️</i><b>الإدارة</b><span>لوحة «اليوم» بما يحتاج قرارًا، والمؤشرات، والقبول، والصلاحيات، والنسخ الاحتياطي.</span></div>
     <div><i>🧭</i><b>المشرف</b><span>مراحله ومجموعاته، وتحضير المعلمين، والمسابقات، وتقارير تُشارك برابط.</span></div>
     <div><i>👨‍🏫</i><b>المعلم</b><span>شاشة «يومي» للحضور والتسميع، والخطط، والتسميع المتبادل، وبطاقة القيم، ومنتجات المهارات.</span></div>
     <div><i>🧒</i><b>الطالب</b><span>مهمة اليوم، وتقدّمه في السورة، واختباره القادم بعدّاد، ولوحة المسابقة.</span></div>
@@ -612,7 +614,7 @@
       <div><i>📖</i><b>خطط الحفظ</b><span>خطة لكل طالب، وتسميع البيت يسجّله الأب</span></div>
       <div><i>🏆</i><b>التحفيز</b><span>سباق أسبوعي، ومستويات وفرق وأوسمة</span></div>
       <div><i>🤖</i><b>مساعد ذكي</b><span>تسأله الإدارة بالعربية فيجيب من البيانات</span></div>
-      <div><i>🧾</i><b>الرسوم</b><span>الدفعات والمتبقي، وإيصال مرقّم PDF</span></div>
+      <div><i>🗓️</i><b>التقويم والمهام</b><span>تقويم هجري، ومهام للفريق بتذكير واتساب</span></div>
       <div><i>📑</i><b>التقارير</b><span>تقرير فصلي بالمسارات الخمسة، وPDF</span></div>
     </div>
     <div class="phonewrap">
@@ -633,9 +635,9 @@
 </section>
 
 <!-- 10 المؤشرات -->
-<section data-chap="1" class="slide warm" data-notes="هذه شريحة الملاك بامتياز. البرنامج يُدار بأحد عشر مؤشرًا، لكل منها مستهدف، وتظهر في المنصة مباشرة بمصدرها (مثل 412 من 450). قل: لن نأتيكم بانطباعات؛ سنأتيكم كل شهر بهذه اللوحة.">
+<section data-chap="1" class="slide warm" data-notes="هذه شريحة الملاك بامتياز. البرنامج يُدار بعشرة مؤشرات، لكل منها مستهدف، وتظهر في المنصة مباشرة بمصدرها (مثل 412 من 450). قل: لن نأتيكم بانطباعات؛ سنأتيكم كل شهر بهذه اللوحة.">
   <span class="eyebrow">الحوكمة بالأرقام</span>
-  <h2>أحد عشر مؤشرًا، لكلٍّ مستهدفه</h2>
+  <h2>عشرة مؤشرات، لكلٍّ مستهدفه</h2>
   <div class="rings6">
     <div><i style="--p:92"><b>92%</b></i><span>حضور الطلاب</span></div>
     <div><i style="--p:95"><b>95%</b></i><span>اكتمال الرصد اليومي</span></div>
@@ -647,7 +649,6 @@
     <div><i style="--p:90"><b>90%</b></i><span>رصد بطاقة القيم</span></div>
     <div><i style="--p:98"><b>98%</b></i><span>حضور المعلمين في الوقت</span></div>
     <div><i style="--p:85"><b>85%</b></i><span>استمرار الطلاب</span></div>
-    <div><i style="--p:90"><b>90%</b></i><span>تحصيل الرسوم</span></div>
     <div class="src"><b>412<small>من 450</small></b><span>كل رقم يظهر بمصدره، لا نسبة بلا أصل</span></div>
   </div>
   <div class="punch">لن نأتيكم بانطباعات؛ سنأتيكم كل شهر بهذه اللوحة.</div>
@@ -717,7 +718,7 @@
     <div><b>🧑‍🏫 تحضير الدرس</b><s>كل معلم يجتهد وحده</s><i>←</i><em>درس جاهز بشرائحه وألعابه وورقة عمله</em></div>
     <div><b>👪 الأسرة</b><s>مكالمات متفرقة</s><i>←</i><em>ملخص أسبوعي تلقائي، وصفحة لكل ابن</em></div>
     <div><b>⭐ جودة المعلم</b><s>زيارة على ورق تُحفظ في ملف</s><i>←</i><em>زيارة رقمية بـ12 معيارًا ومنحنى تطوّر</em></div>
-    <div><b>📈 القرار</b><s>انطباعات وتقارير متأخرة</s><i>←</i><em>أحد عشر مؤشرًا حيًّا، ومساعد يجيب بالأرقام</em></div>
+    <div><b>📈 القرار</b><s>انطباعات وتقارير متأخرة</s><i>←</i><em>عشرة مؤشرات حيّة، ومساعد يجيب بالأرقام</em></div>
   </div>
 </section>
 
@@ -764,8 +765,6 @@ const EDIT = {
   date: '',              // مثال: 'الأحد 12 أكتوبر 2026'
   seats_min: 20, seats_max: 30,
   start: 'خلال أسبوعين',
-  fee: 15000,            // الرسوم السنوية على الأسرة
-  real_cost: 30000,      // التكلفة الفعلية للطالب
   // أرقام القبول حتى اليوم: حدّثها من الجدول صباح الاجتماع (اتركها فارغة إن لم تتوفر)
   applicants: '', qualified: '', interviewed: '', nominated: '',
   link: 'https://nabigha-sa.github.io/',
@@ -778,8 +777,6 @@ function fillAll(){
   const set = (k,v)=>document.querySelectorAll(`[data-k="${k}"]`).forEach(el=>{ if(v===''||v===undefined||v===null) return; el.textContent=v; el.classList.remove('fill'); });
   for(const k of ['date','start','phone','applicants','qualified','interviewed','nominated']) set(k, EDIT[k]);
   set('seats', EDIT.seats_min+'–'+EDIT.seats_max);
-  set('fee_fmt', fmt(EDIT.fee)); set('real_fmt', fmt(EDIT.real_cost));
-  set('revenue', fmt(EDIT.fee*EDIT.seats_min/1000)+'–'+fmt(EDIT.fee*EDIT.seats_max/1000)+' ألف');
   document.querySelectorAll('[data-href]').forEach(a=>{ const u=EDIT[a.dataset.href]; if(u){ a.href=u; a.textContent=u.replace(/^https?:\/\//,'').replace(/\/$/,''); } });
   if(EDIT.link) document.getElementById('qr').innerHTML='<img alt="QR" src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&margin=6&data='+encodeURIComponent(EDIT.link)+'">';
 }
